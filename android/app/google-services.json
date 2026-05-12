@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "393174528729",
+    "project_id": "vetdr-77fbf",
+    "storage_bucket": "vetdr-77fbf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393174528729:android:23360b92677f43fd8d44c8",
+        "android_client_info": {
+          "package_name": "com.example.batter_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHcRynAZoBUv08vsvqrx9vhOCWuILcUQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
