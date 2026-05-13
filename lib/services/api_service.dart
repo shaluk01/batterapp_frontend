@@ -29,43 +29,8 @@ class ApiService {
     return jsonDecode(res.body);
   }
 
-  // =======================
-  // AUTH (OTP BASED)
-  // =======================
-
-  // SEND OTP
-  static Future<dynamic> sendOtp(String phone) async {
-    final res = await http.post(
-      Uri.parse('$baseUrl/api/auth/send-otp'),
-      headers: {"Content-Type": "application/json"},
-      body: jsonEncode({
-        "phone": phone,
-      }),
-    );
-
-    return jsonDecode(res.body);
-  }
-
-  // VERIFY OTP
-  static Future<dynamic> verifyOtp(String phone, String otp) async {
-    final res = await http.post(
-      Uri.parse('$baseUrl/api/auth/verify-otp'),
-      headers: {"Content-Type": "application/json"},
-      body: jsonEncode({
-        "phone": phone,
-        "otp": otp,
-      }),
-    );
-
-    final data = jsonDecode(res.body);
-
-    // Save token
-    if (data is Map<String, dynamic>) {
-      authToken = data['token'];
-    }
-
-    return data;
-  }
+  
+  
 
   // =======================
   // USERS
