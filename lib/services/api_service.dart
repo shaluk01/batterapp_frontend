@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ApiService {
-  static const String baseUrl = "https://batterapp-backend-1-usce.onrender.com";
+  static const String baseUrl = "https://batterapp-backend-2-1mhs.onrender.com";
 
   // Store token after login
   static String? authToken;
